@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Reza Portfolio</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="author" content="" />
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <link rel="stylesheet" type="text/css" href="css/vendor.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700;900&display=swap" rel="stylesheet" />
+  </head>
+
+  <body class="bg-body homepage post-template" data-bs-spy="scroll" data-bs-target="#header-nav" tabindex="0">
+    <svg xmlns="http://www.w3.org/2000/svg" style="display: none">
+      <defs>
+        <symbol xmlns="http://www.w3.org/2000/svg" id="instagram" viewBox="0 0 15 15">
+          <path fill="none" stroke="currentColor" d="M11 3.5h1M4.5.5h6a4 4 0 0 1 4 4v6a4 4 0 0 1-4 4h-6a4 4 0 0 1-4-4v-6a4 4 0 0 1 4-4Zm3 10a3 3 0 1 1 0-6a3 3 0 0 1 0 6Z" />
+        </symbol>
+        <symbol xmlns="http://www.w3.org/2000/svg" id="youtube" viewBox="0 0 15 15">
+          <path
+            fill="currentColor"
+            d="m1.61 12.738l-.104.489l.105-.489Zm11.78 0l.104.489l-.105-.489Zm0-10.476l.104-.489l-.105.489Zm-11.78 0l.106.489l-.105-.489ZM6.5 5.5l.277-.416A.5.5 0 0 0 6 5.5h.5Zm0 4H6a.5.5 0 0 0 .777.416L6.5 9.5Zm3-2l.277.416a.5.5 0 0 0 0-.832L9.5 7.5ZM0 3.636v7.728h1V3.636H0Zm15 7.728V3.636h-1v7.728h1ZM1.506 13.227c3.951.847 8.037.847 11.988 0l-.21-.978a27.605 27.605 0 0 1-11.568 0l-.21.978ZM13.494 1.773a28.606 28.606 0 0 0-11.988 0l.21.978a27.607 27.607 0 0 1 11.568 0l.21-.978ZM15 3.636c0-.898-.628-1.675-1.506-1.863l-.21.978c.418.09.716.458.716.885h1Zm-1 7.728a.905.905 0 0 1-.716.885l.21.978A1.905 1.905 0 0 0 15 11.364h-1Zm-14 0c0 .898.628 1.675 1.506 1.863l.21-.978A.905.905 0 0 1 1 11.364H0Zm1-7.728c0-.427.298-.796.716-.885l-.21-.978A1.905 1.905 0 0 0 0 3.636h1ZM6 5.5v4h1v-4H6Zm.777 4.416l3-2l-.554-.832l-3 2l.554.832Zm3-2.832l-3-2l-.554.832l3 2l.554-.832Z"
+          />
+        </symbol>
+        <symbol xmlns="http://www.w3.org/2000/svg" id="dribble" viewBox="0 0 15 15">
+          <path
+            fill="none"
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M4.839 1.024c3.346 4.041 5.096 7.922 5.704 12.782M.533 6.82c5.985-.138 9.402-1.083 11.97-4.216M2.7 12.594c3.221-4.902 7.171-5.65 11.755-4.293M14.5 7.5a7 7 0 1 0-14 0a7 7 0 0 0 14 0Z"
+          />
+        </symbol>
+      </defs>
+    </svg>
+
+    <a class="menu-btn"><span></span></a>
+
+    <div class="container-fluid overflow-hidden">
+      <header id="header-nav" class="col-lg-2 position-fixed px-5 bg-white h-100">
+        <div class="header-wrap d-flex flex-column justify-content-between h-100">
+          <div class="navigation">
+            <div class="site-logo mt-5">
+              <a href="index.html">
+                <img src="images/reza.png" alt="logo" class="img-fluid" />
+              </a>
+            </div>
+
+            <nav id="one-page-menu" class="vertical-menu my-5">
+              <ul class="menu-list list-unstyled">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#experience" class="nav-link">Skills</a></li>
+                <li><a href="#portfolio" class="nav-link">Works</a></li>
+                <li><a href="#certification" class="nav-link">Certifications</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+                <!-- <li>
+                  <a class="nav-link btn-toggle d-flex justify-content-between align-items-center collapsed" data-bs-toggle="collapse" data-bs-target="#pages-collapse" aria-expanded="false"> Pages </a>
+                  <div id="pages-collapse" class="collapse">
+                    <ul class="list-unstyled py-3">
+                      <li>
+                        <a href="single-post.html">Single Post <span class="badge bg-primary">PRO</span></a>
+                      </li>
+                      <li>
+                        <a href="single-portfolio.html">Single Portfolio <span class="badge bg-primary">PRO</span></a>
+                      </li>
+                      <li>
+                        <a href="contact.html">Contact <span class="badge bg-primary">PRO</span></a>
+                      </li>
+                      <li>
+                        <a href="team.html">My Team <span class="badge bg-primary">PRO</span></a>
+                      </li>
+                      <li>
+                        <a href="blog.html">Blog <span class="badge bg-primary">PRO</span></a>
+                      </li>
+                      <li>
+                        <a href="portfolio-masonry.html">Portfolio Masonry <span class="badge bg-primary">PRO</span></a>
+                      </li>
+                      <li>
+                        <a href="styles.html">Styles <span class="badge bg-primary">PRO</span></a>
+                      </li>
+                    </ul>
+                  </div>
+                </li> -->
+                <!-- <li><a href="https://templatesjungle.gumroad.com/l/julia-onepage-portfolio" target="_blank"
+                  class="nav-link d-flex justify-content-between align-items-center fw-bold"><span>Get
+                    PRO</span> <svg width="18" height="18" viewBox="0 0 24 24">
+                    <use xlink:href="#cart"></use>
+                  </svg></a></li> -->
+              </ul>
+            </nav>
+          </div>
+          <div class="mt-5">
+            <div class="email-links">
+              <a href="mailto:saefulrezaalfarizi@gmail.com" class="py-3 my-3 border-bottom d-flex">saefulrezaalfarizi@gmail.com</a>
+            </div>
+            <ul class="list-unstyled d-flex justify-content-start flex-wrap gap-3">
+              <li>
+                <a href="https://www.youtube.com/@reza.alfarizi23" class="text-dark">
+                  <svg width="24" height="24" viewBox="0 0 24 24">
+                    <use xlink:href="#youtube"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.instagram.com/rz.alfrz" class="text-dark">
+                  <svg width="24" height="24" viewBox="0 0 24 24">
+                    <use xlink:href="#instagram"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+            <!-- <div class="py-4 border-top">
+              <p>HTML by <a href="https://templatesjungle.com/" target="_blank">TemplatesJungle</a></p>
+            </div> -->
+          </div>
+        </div>
+      </header>
+
+      <main class="col-lg-10 offset-lg-2">
+        <div class="container">
+          <!-- content wrapper -->
+          <div class="justify-content-center px-1 mx-1 px-xl-5 mx-xl-5">
+            <section id="home" class="py-5 bg-text" data-text="01">
+              <div class="row">
+                <div class="col-lg-5">
+                  <div class="banner-image text-center" data-aos="fade-right">
+                    <img src="images/banner.png" alt="banner" class="img-fluid" class="img-fluid" />
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <div class="banner-content my-1 pt-1 my-lg-5 pt-lg-5" data-aos="fade-in">
+                    <span class="text-muted text-uppercase">Data Enthusiast</span>
+                    <h1 class="banner-title display-5 lh-2 txt-fx slide-up">Saepul Reza Alparizi</h1>
+                  </div>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-lg-4">
+                  <div class="icon-box" data-aos="fade-up" data-aos-delay="60">
+                    <span>01</span>
+                    <h3 class="sub-heading">Data Analyst</h3>
+                    <p>Expert in turning raw data into actionable insights using advanced analytical tools and techniques.</p>
+                  </div>
+                </div>
+                <div class="col-lg-4">
+                  <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
+                    <span>02</span>
+                    <h3 class="sub-heading">Machine Learning</h3>
+                    <p>Skilled in building intelligent systems that solve real-world problems using AI and machine learning models.</p>
+                  </div>
+                </div>
+                <div class="col-lg-4">
+                  <div class="icon-box" data-aos="fade-up" data-aos-delay="200">
+                    <span>03</span>
+                    <h3 class="sub-heading">UI/UX Designer</h3>
+                    <p>Innovative designer focused on creating intuitive and visually compelling user experiences, ensuring seamless interaction between users and digital products.</p>
+                  </div>
+                </div>
+                <div class="col-lg-5 mt-3">
+                  <a href="#portfolio" class="btn btn-dark text-uppercase py-3 px-5" data-aos="fade-up" data-aos-delay="300">View All Works</a>
+                </div>
+              </div>
+            </section>
+
+            <section id="about" class="my-5 py-5 bg-text" data-text="02">
+              <div class="row d-flex flex-wrap align-items-start" data-aos="fade-up">
+                <!-- Education -->
+                <div class="col-lg-6 pb-5">
+                  <div class="mb-4">
+                    <span class="text-muted text-uppercase">BIODATA</span>
+                    <h2 class="display-4 txt-fx slide-up mb-4">Education</h2>
+                  </div>
+                  <!-- Education content -->
+                  <div class="data-info py-3" data-aos="fade-up">
+                    <span class="meta-date">2020 - 2024</span>
+                    <h3 class="info-title">Bachelor's Degree in Informatics Engineering</h3>
+                    <p>Yogyakarta University of Technology</p>
+                  </div>
+                  <div class="row">
+                    <div class="col-lg-6">
+                      <div class="info-element py-4" data-aos="fade-up">
+                        <table class="table">
+                          <tbody>
+                            <tr><th>Age</th><td>21</td></tr>
+                            <tr><th>Residence</th><td>Indonesia</td></tr>
+                            <tr><th>Address</th><td>Jakarta Selatan, 12710</td></tr>
+                            <tr><th>E-mail</th><td><a href="#">saefulrezaalfarizi@gmail.com</a></td></tr>
+                            <tr class="no-border-bottom"><th>Phone</th><td>+62 881 2724 088</td></tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            
+                <!-- Experiences -->
+                <div class="col-lg-6 pb-5">
+                  <div class="mb-4">
+                    <span class="text-muted text-uppercase invisible">BIODATA</span> <!-- Biar heading sejajar -->
+                    <h2 class="display-4 txt-fx slide-up mb-4">Experience</h2>
+                  </div>
+                  <div class="data-info py-3" data-aos="fade-up" data-aos-delay="200">
+                    <span class="meta-date">Jul - Oct 2024</span>
+                    <h3 class="info-title">BRI Insurance: Intern</h3>
+                    <p style="text-align: justify;">
+                      Interned at BRI Insurance KC Yogyakarta Adisucipto, focusing on data and document management, customer service, and product marketing. Responsibilities included scanning and archiving documents, handling insurance data entries, promoting insurance products, assisting in events and exhibitions, and supporting claim processes and administration. Developed skills in communication, teamwork, and data accuracy.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </section>            
+
+            <section id="experience" class="my-5 py-5 bg-text" data-text="03">
+              <div class="container">
+                <div class="row mb-5">
+                  <div class="col-lg-6" data-aos="fade-up">
+                    <span class="text-muted text-uppercase">Introduction</span>
+                    <h2 class="display-4 txt-fx slide-up">Experienced Creative Mind</h2>
+                    <p style="text-align: justify;">Showcasing a dynamic blend of creativity, expertise, and skills that drive impactful results.</p>
+                  </div>
+            
+                  <div class="col-lg-5 offset-lg-1" data-aos="fade-up">
+                    <div class="skill-chart py-3 px-2">
+                      <ul class="skill-chart-list list-unstyled">
+                        <!-- Microsoft Excel -->
+                        <li class="mb-3">
+                          <div class="chart-header d-flex justify-content-between">
+                            <span class="skill-title">Microsoft Excel</span>
+                            <span class="percentage">80%</span>
+                          </div>
+                          <div class="chart-border">
+                            <div class="chart-percentage eighty-percent"></div>
+                          </div>
+                        </li>
+                  
+                        <!-- MySQL -->
+                        <li class="mb-3">
+                          <div class="chart-header d-flex justify-content-between">
+                            <span class="skill-title">MySQL</span>
+                            <span class="percentage">70%</span>
+                          </div>
+                          <div class="chart-border">
+                            <div class="chart-percentage seventy-percent"></div>
+                          </div>
+                        </li>
+                  
+                        <!-- Oracle Rapidminer -->
+                        <li class="mb-3">
+                          <div class="chart-header d-flex justify-content-between">
+                            <span class="skill-title">Oracle Rapidminer</span>
+                            <span class="percentage">70%</span>
+                          </div>
+                          <div class="chart-border">
+                            <div class="chart-percentage seventy-percent"></div>
+                          </div>
+                        </li>
+                  
+                        <!-- Database -->
+                        <li class="mb-3">
+                          <div class="chart-header d-flex justify-content-between">
+                            <span class="skill-title">Database</span>
+                            <span class="percentage">80%</span>
+                          </div>
+                          <div class="chart-border">
+                            <div class="chart-percentage eighty-percent"></div>
+                          </div>
+                        </li>
+                  
+                        <!-- Figma -->
+                        <li class="mb-3">
+                          <div class="chart-header d-flex justify-content-between">
+                            <span class="skill-title">Figma</span>
+                            <span class="percentage">80%</span>
+                          </div>
+                          <div class="chart-border">
+                            <div class="chart-percentage eighty-percent"></div>
+                          </div>
+                        </li>
+                  
+                        <!-- Sales & Marketing -->
+                        <li class="mb-3">
+                          <div class="chart-header d-flex justify-content-between">
+                            <span class="skill-title">Sales & Marketing</span>
+                            <span class="percentage">70%</span>
+                          </div>
+                          <div class="chart-border">
+                            <div class="chart-percentage seventy-percent"></div>
+                          </div>
+                        </li>
+                  
+                        <!-- Social Media -->
+                        <li class="mb-3">
+                          <div class="chart-header d-flex justify-content-between">
+                            <span class="skill-title">Social Media (Instagram, Threads & TikTok)</span>
+                            <span class="percentage">90%</span>
+                          </div>
+                          <div class="chart-border">
+                            <div class="chart-percentage ninety-percent"></div>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  
+                </div>
+              </div>
+            </section>
+            
+
+            <section id="portfolio" class="my-5 py-5 bg-text" data-text="04">
+              <div class="section-header my-5" data-aos="fade-up">
+                <div class="row justify-content-left g-5">
+                  <div class="col-lg-5">
+                    <span class="text-muted text-uppercase">some of my recent works</span>
+                    <h2 class="display-5 txt-fx slide-up">Portofolio</h2>
+                  </div>
+                  <div class="col-lg-7" data-aos="fade-up">
+                    <p>Discover my journey, skills, and projects that reflect innovation, dedication, and creativity.</p>
+                    <a href="files/cvreza.pdf" class="btn btn-dark px-5 py-3">View My CV</a>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper portfolio-Swiper portfolio-content py-4" data-aos="fade-up">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="image-holder mb-2">
+                      <a href="https://eprints.uty.ac.id/14793/" title="Details"><img src="images/port-item1.png" alt="portfolio" class="img-fluid" /></a>
+                    </div>
+                    <div class="caption d-flex justify-content-between align-items-center">
+                      <div class="title">Scientific work</div>
+                      <a href="https://eprints.uty.ac.id/14793/" class="image-format bg-orange">.pdf</a>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="image-holder mb-2">
+                      <a href="files/intern.pdf" title="Details"><img src="images/port-item2.png" alt="portfolio" class="img-fluid" /></a>
+                    </div>
+                    <div class="caption d-flex justify-content-between align-items-center">
+                      <div class="title">BRI Insurance Internship</div>
+                      <a href="files/intern.pdf" class="image-format bg-orange">.pdf</a>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="image-holder mb-2">
+                      <a href="https://www.figma.com/proto/86wKgE2cdtmsf4tKMmhadr/Burjo-Borneo?node-id=19-423&starting-point-node-id=19%3A423" class="image-format bg-blue" title="Details"><img src="images/port-item3.png" alt="portfolio" class="img-fluid" /></a>
+                    </div>
+                    <div class="caption d-flex justify-content-between align-items-center">
+                      <div class="title">UI Project App</div>
+                      <a href="https://www.figma.com/proto/86wKgE2cdtmsf4tKMmhadr/Burjo-Borneo?node-id=19-423&starting-point-node-id=19%3A423" class="image-format bg-blue">.svg</a>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="image-holder mb-2">
+                      <a href="https://gudangjurnal.com/index.php/gjmi/article/view/127" title="Details"><img src="images/port-item4.png" alt="portfolio" class="img-fluid" /></a>
+                    </div>
+                    <div class="caption d-flex justify-content-between align-items-center">
+                      <div class="title">Scientific work</div>
+                      <a href="https://gudangjurnal.com/index.php/gjmi/article/view/127" class="image-format bg-orange">.pdf</a>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="image-holder mb-2">
+                      <a href="files/edited.pdf" title="Details"><img src="images/port-item5.png" alt="portfolio" class="img-fluid" /></a>
+                    </div>
+                    <div class="caption d-flex justify-content-between align-items-center">
+                      <div class="title">Foto Editing</div>
+                      <a href="files/edited.pdf" class="image-format">.jpg</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-pagination mt-5"></div>
+              </div>
+            </section>
+
+            <section id="certification" class="my-5 py-5 mb-5 bg-text" data-text="05">
+              <div class="container">
+                <div class="row align-items-start gap-4">
+                
+                  <!-- Kiri: Teks Deskripsi -->
+                  <div class="col-lg-6" data-aos="fade-up">
+                    <span class="text-muted text-uppercase">Certifications</span>
+                    <h2 class="display-5 txt-fx slide-up">My Credentials</h2>
+                    <p>Explore my professional certifications that reflect my dedication to growth and expertise in various fields.</p>
+                  </div>
+                
+                  <!-- Kanan: Tabel Sertifikat -->
+                  <div class="col-lg-6" data-aos="fade-up">
+                    <div class="table-wrapper">
+                      <table class="table table-borderless">
+                        <tbody>
+                          <tr><td><a href="#certification" onclick="openPDF('files/certification1.pdf')">View Certification 1</a></td></tr>
+                          <tr><td><a href="#certification" onclick="openPDF('files/certification2.pdf')">View Certification 2</a></td></tr>
+                          <tr><td><a href="#certification" onclick="openPDF('files/certification3.pdf')">View Certification 3</a></td></tr>
+                          <tr><td><a href="#certification" onclick="openPDF('files/certification4.pdf')">View Certification 4</a></td></tr>
+                          <tr><td><a href="#certification" onclick="openPDF('files/certification5.pdf')">View Certification 5</a></td></tr>
+                          <tr><td><a href="#certification" onclick="openPDF('files/certification6.pdf')">View Certification 6</a></td></tr>
+                          <tr><td><a href="#certification" onclick="openPDF('files/certification7.pdf')">View Certification 7</a></td></tr>
+                          <tr><td><a href="#certification" onclick="openPDF('files/certification8.pdf')">View Certification 8</a></td></tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>                  
+                  
+                  <!-- Modal untuk PDF Viewer -->
+                  <div class="modal fade" id="pdfModal" tabindex="-1" aria-labelledby="pdfModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-lg modal-dialog-centered">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title fw-normal" id="pdfModalLabel" style="font-family: inherit;">Certification Viewer</h5>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body p-0">
+                          <iframe id="pdfViewer" src="" width="100%" style="height: 70vh; border: none;"></iframe>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <!-- Script untuk mengatur PDF -->
+                  <script>
+                    function openPDF(pdfUrl) {
+                      document.getElementById('pdfViewer').src = pdfUrl;
+                      var myModal = new bootstrap.Modal(document.getElementById('pdfModal'));
+                      myModal.show();
+                    }
+                  </script>
+                </div>
+              </div>
+            </section>                            
+
+            <section id="contact" class="my-5 py-5 bg-text" data-text="06">
+              <div class="container">
+                <div class="row justify-content-left mb-5">
+                  <div class="col-lg-6" data-aos="fade-up">
+                    <span class="text-muted text-uppercase">Personal Info</span>
+                    <h2 class="display-4 txt-fx slide-up">Contact Me</h2>
+                    <p>Get in touch to collaborate, connect, or discuss exciting opportunities.</p>
+                  </div>
+                </div>
+                <div class="row d-flex g-5">
+                  <div class="col-lg-7" data-aos="fade-up">
+                    <h3>Frequently Asked Questions</h3>
+                    <div class="accordion" id="accordionExample2">
+                      <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingOne">
+                          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-collapse1" aria-expanded="true" aria-controls="accordion-collapse1">
+                            What experience do you have in my industry?
+                          </button>
+                        </h2>
+                        <div id="accordion-collapse1" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample2">
+                          <div class="accordion-body">
+                            I have hands-on experience in data analysis, utilizing machine learning models to uncover insights and drive decisions. As a UI/UX Designer, I design intuitive and user-centered interfaces, combining creativity with usability principles to enhance user satisfaction and ensure seamless interaction across digital platforms.
+                          </div>
+                        </div>
+                      </div>
+                      <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingTwo">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-collapse2" aria-expanded="false" aria-controls="accordion-collapse2">
+                            How many clients do you typically work with at once?
+                          </button>
+                        </h2>
+                        <div id="accordion-collapse2" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample2">
+                          <div class="accordion-body">
+                            I typically work with 3 to 5 clients at once, ensuring each project receives focused attention while maintaining quality and meeting deadlines. This allows me to manage multiple tasks efficiently without
+                            compromising on results.
+                          </div>
+                        </div>
+                      </div>
+                      <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingThree">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-collapse3" aria-expanded="false" aria-controls="accordion-collapse3">
+                            Do you have the capacity to take on this project right now?
+                          </button>
+                        </h2>
+                        <div id="accordion-collapse3" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample2">
+                          <div class="accordion-body">
+                            Yes, I currently have the capacity to take on new projects and am ready to dedicate the necessary time and resources to ensure its success. Let's discuss the details and timeline to get started!
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-lg-5">
+                    <div class="right-content" data-aos="fade-up">
+                      <div class="element-header align-right">
+                        <h3>Feel free to send me a message or any word of appreciation.</h3>
+                      </div>
+
+                      <div class="contact-form py-4">
+                        <form id="form" class="form-group">
+                          <div class="pb-2"><input type="text" name="name" placeholder="Your Full Name" class="form-control" /></div>
+                          <div class="pb-2"><input type="text" name="address" placeholder="Your Email Address" class="form-control" /></div>
+                          <div class="pb-2"><textarea placeholder="Your Message" rows="6" class="form-control"></textarea></div>
+                          <button type="submit" name="submit" class="btn btn-dark w-100 btn-rounded">Submit</button>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
+          <!-- / content wrapper -->
+        </div>
+      </main>
+    </div>
+
+    <script src="js/jquery-1.11.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
